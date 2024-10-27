@@ -12,7 +12,7 @@ public class PasswordVaultUpdateDto : BaseDto<Guid>, IPasswordVaultDto
     public DateTime? LastPasswordChangeDate { get; set; }  // Last time password was changed
 
     // Password fields
-    public string CurrentPassword { get; set; }  // Mevcut parolanız (doğrulamak için)
+    public string Password { get; set; }  // Mevcut parolanız (doğrulamak için)
     public string NewPassword { get; set; }  // Güncellenmek istenen yeni parola
     public string NewPasswordRepeat { get; set; }  // Yeni parolanın tekrarı
 

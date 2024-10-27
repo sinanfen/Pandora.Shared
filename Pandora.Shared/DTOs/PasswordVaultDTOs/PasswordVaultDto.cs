@@ -10,6 +10,7 @@ public class PasswordVaultDto : BaseDto<Guid>
     public string SecureSiteName { get; set; }  // e.g., "Facebook"
     public string SecureUsernameOrEmail { get; set; }  // AES-encrypted username/email
     public string SecureNotes { get; set; }  // AES-encrypted notes
+    public string Password { get; set; }  // Plain text olarak değil, AES-encrypted
     public DateTime? LastPasswordChangeDate { get; set; }  // Last time password was changed
     public DateTime? PasswordExpirationDate { get; set; }  // Optional expiration date for the password
 
